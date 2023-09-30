@@ -9,11 +9,11 @@
       in
       {
         devShell = pkgs.mkShell {
-          buildInputs = [
-            pkgs.pkg-config
-            pkgs.stack
-            pkgs.SDL2
-            pkgs.gmp
+          buildInputs = with pkgs; [
+            pkg-config
+            stack
+            SDL2
+            gmp
           ];
         };
       });
